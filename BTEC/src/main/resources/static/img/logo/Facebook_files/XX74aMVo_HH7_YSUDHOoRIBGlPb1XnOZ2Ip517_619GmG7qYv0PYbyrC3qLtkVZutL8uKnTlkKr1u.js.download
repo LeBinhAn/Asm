@@ -1,0 +1,9 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["thUSI"]); }
+
+__d("CometVideoHomeLiveTabExperiments",["gkx"],(function(a,b,c,d,e,f){"use strict";a=function(){return b("gkx")("976093")&&b("gkx")("1351276")};var g=function(){return!0},h=function(){return b("gkx")("1205329")};c=function(){return b("gkx")("1359267")};var i=function(){return!0};e.exports={dedupEnabled:function(){return!0},hotswapEnabled:a,injectionEnabled:g,liveEnabled:h,swapMusicGamingSections:c,thumbnailsInjectEnabled:function(){return!i()&&g()&&h()}}}),null);
+__d("ShowSurfacesLoggingUtil",["Banzai","WebSession"],(function(a,b,c,d,e,f){"use strict";var g="show_surfaces";a={log:function(a,c,d,e,f,h,i,j,k){b("Banzai").post(g,{entrypoint_surface:c,event:e,event_data:f,page_id:a,player_origin:j,player_suborigin:k,session_id:b("WebSession").getId(),surface:d,video_id:h,video_list_id:i})}};e.exports=a}),null);
+__d("cometSearchEntityScopedTypeaheadDialogFallback",["CometCardedDialogLoadingState.react","React","cometSearchTypeaheadDialogAnchorUntilHeight"],(function(a,b,c,d,e,f){"use strict";var g=b("React");a=function(a){return g.jsx(b("CometCardedDialogLoadingState.react"),{anchorUntilHeight:b("cometSearchTypeaheadDialogAnchorUntilHeight"),onClose:a})};e.exports=a}),null);
+__d("XCometVideoHomeLatestControllerRouteBuilder",["cometRouteBuilder"],(function(a,b,c,d,e,f){a=b("cometRouteBuilder")("/watch/latest/",Object.freeze({}),void 0);e.exports=a}),null);
+__d("XCometVideoHomeSavedControllerRouteBuilder",["cometRouteBuilder"],(function(a,b,c,d,e,f){a=b("cometRouteBuilder")("/watch/saved/",Object.freeze({}),void 0);e.exports=a}),null);
+__d("XCometVideoHomeLiveControllerRouteBuilder",["cometRouteBuilder"],(function(a,b,c,d,e,f){a=b("cometRouteBuilder")("/watch/live/",Object.freeze({}),void 0);e.exports=a}),null);
+__d("cometSearchTypeaheadDialogAnchorUntilHeight",[],(function(a,b,c,d,e,f){"use strict";e.exports=540}),null);

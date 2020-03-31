@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["euL60"]); }
+
+__d("CometFeedSection.react",["React","TetraUnitHeader.react","stylex"],(function(a,b,c,d,e,f){"use strict";var g=b("React");function a(a){var c=a.sectionContents;a=a.title;return g.jsxs("div",{"data-testid":void 0,role:"feed",children:[g.jsx("div",{className:"f10w8fjw ocgrx2df tmqn73lw",children:g.jsx(b("TetraUnitHeader.react"),{headline:a,headlineColor:"secondary",level:4})}),c]})}e.exports=a}),null);

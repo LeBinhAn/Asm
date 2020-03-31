@@ -20,26 +20,26 @@ import java.util.Optional;
 public class UserController {  
   @Autowired private UserService userService;  
 
-  @RequestMapping("/show-user")  
+  @RequestMapping("/view-all-account")  
   public String index(Model model) {  
     List<AppUser> users = userService.getAllUser();  
 
     model.addAttribute("users", users);  
 
-    return "show-user";  
+    return "view-all-account";  
   }  
 
-  @RequestMapping(value = "/add-user", method = RequestMethod.GET)  
+  @RequestMapping(value = "/add-new-account", method = RequestMethod.GET)  
   public String addUser(Model model, Principal principal) {  
     model.addAttribute("user", new AppUser());  
-    return "add-user";  
+    return "add-new-account";  
   }  
   
   @RequestMapping(value = "/edit", method = RequestMethod.GET)  
   public String editUser(@RequestParam("id") Long userId, Model model) {  
     Optional<AppUser> userEdit = userService.findUserById(userId);  
     userEdit.ifPresent(user -> model.addAttribute("user", user));  
-    return "edit-user";  
+    return "edit-account";  
   }  
 
   @RequestMapping(value = "/save", method = RequestMethod.POST)  

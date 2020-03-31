@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["4Dloj"]); }
+
+__d("XCometVideoControllerRouteBuilder",["cometRouteBuilder"],(function(a,b,c,d,e,f){a=b("cometRouteBuilder")("/{page_token}/videos/{?set}/{story_token}/",Object.freeze({}),void 0);e.exports=a}),null);

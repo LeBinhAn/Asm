@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["yx8sJ"]); }
+
+__d("FBRTCConsoleLogger",["nullthrows","requireCond","Log","LogHistory","cr:1112656"],(function(a,b,c,d,e,f){"use strict";var g=null;a=function(){a.getInstance=function(){g||(g=new a());return g};function a(){this.$1=b("LogHistory").getInstance(a.MODULE_NAME)}var c=a.prototype;c.getLogHistory=function(){return this.$1};c.log=function(a,b,c,d,e){d===void 0&&(d="Console");e===void 0&&(e="DEBUG");e=" "+JSON.stringify({conferenceName:b,callID:c});this.$1.log(d||"Console",a+e);return this};return a}();a.MODULE_NAME="webrtc";e.exports=a}),null);

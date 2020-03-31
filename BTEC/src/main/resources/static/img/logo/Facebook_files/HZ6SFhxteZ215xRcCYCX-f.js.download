@@ -1,0 +1,5 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["+6fOU"]); }
+
+__d("CometMediaTagFalcoEvent",["FalcoLoggerInternal"],(function(a,b,c,d,e,f){"use strict";a=b("FalcoLoggerInternal").create("comet_media_tag");e.exports=a}),null);
+__d("CometMediaVpvdFalcoEvent",["FalcoLoggerInternal"],(function(a,b,c,d,e,f){"use strict";a=b("FalcoLoggerInternal").create("comet_media_vpvd");e.exports=a}),null);
+__d("CometMediaRemoveTagFalcoEvent",["FalcoLoggerInternal"],(function(a,b,c,d,e,f){"use strict";a=b("FalcoLoggerInternal").create("comet_media_remove_tag");e.exports=a}),null);

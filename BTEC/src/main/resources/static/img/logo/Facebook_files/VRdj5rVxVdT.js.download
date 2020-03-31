@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["vNohu"]); }
+
+__d("useCometSearchResultsTypeaheadDialogTriggerClickHandler",["React","cometSearchEntityScopedTypeaheadDialogFallback","useCometEntryPointDialog"],(function(a,b,c,d,e,f){"use strict";c=b("React");var g=c.useCallback;function a(a,c){var d={entityID:c};a=b("useCometEntryPointDialog")(a,d,"button",b("cometSearchEntityScopedTypeaheadDialogFallback"));var e=a[0];d=a[1];var f=a[2],h=a[3];a=a[4];var i=g(function(){e({entityID:c})},[c,e]);return[i,d,f,h,a]}e.exports=a}),null);

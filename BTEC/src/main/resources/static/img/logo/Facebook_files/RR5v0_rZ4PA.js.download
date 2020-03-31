@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["jZNtl"]); }
+
+__d("CometGamingLeftRailContainerQuery$Parameters",[],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{operationKind:"query",name:"CometGamingLeftRailContainerQuery",id:"3078211752188849",text:null,metadata:{relayPreloadable:!0}}};e.exports=a}),null);
+__d("buildCometGamingRoute.entrypoint",["JSResource","createContentAreaCompoundEntryPointBuilder","CometGamingLeftRailContainerQuery$Parameters"],(function(a,b,c,d,e,f){"use strict";e.exports=b("createContentAreaCompoundEntryPointBuilder")(b("JSResource")("CometGamingRoot.react").__setRef("buildCometGamingRoute.entrypoint"),function(a){return{leftRailQueryReference:{parameters:b("CometGamingLeftRailContainerQuery$Parameters"),variables:{}}}})}),null);

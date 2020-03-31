@@ -48,6 +48,7 @@ public class MainController {
          
         return "all-professors";
     }
+
     @RequestMapping(value = "/404", method = RequestMethod.GET)
     public String accessDenied(Model model, Principal principal) {
  

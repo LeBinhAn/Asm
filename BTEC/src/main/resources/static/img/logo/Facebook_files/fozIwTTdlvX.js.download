@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["TMUr4"]); }
+
+__d("CometTabMenu.react",["CometMenu.react","CometMenuItemSelectable.react","React"],(function(a,b,c,d,e,f){"use strict";var g=b("React");function a(a){var c=a.menuItems;a.onClose;return g.jsx(b("CometMenu.react"),{children:c.map(function(a,c){var d=a.disabled,e=a.label,f=a.linkProps,h=a.onHoverIn,i=a.onHoverOut,j=a.onPress,k=a.onPressIn,l=a.selected;return g.jsx(b("CometMenuItemSelectable.react"),{disabled:d,href:(d=f==null?void 0:f.url)!=null?d:void 0,icon:a.icon!=null?a.icon:void 0,isSelected:(d=l)!=null?d:!1,onClick:j,onHoverIn:h,onHoverOut:i,onPressIn:k,primaryText:e,role:"menuitemradio",routeTarget:f==null?void 0:f.routeTarget,target:f==null?void 0:f.target},c)})})}e.exports=a}),null);

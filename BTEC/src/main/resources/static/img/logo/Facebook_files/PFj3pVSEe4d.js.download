@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["1ZRsY"]); }
+
+__d("createGenericCompoundEntryPointBuilder",[],(function(a,b,c,d,e,f){"use strict";e.exports=function(a,b){return function(c){return{getPreloadProps:function(a){return{entryPoints:c(a),extraProps:null,queries:b(a)}},root:a}}}}),null);
+__d("createContentAreaCompoundEntryPointBuilder",["createGenericCompoundEntryPointBuilder"],(function(a,b,c,d,e,f){"use strict";e.exports=function(a,c){var d=b("createGenericCompoundEntryPointBuilder")(a,c);return function(a,b){var c={getPreloadProps:b,root:a};return d(function(a){return{contentEntryPoint:{entryPoint:c,entryPointParams:a}}})}}}),null);

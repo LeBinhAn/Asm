@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["2noMu"]); }
+
+__d("SearchCometGlobalSearchTopTabRoot.entrypoint",["CometSearchResultsBase.entrypoint","JSResource"],(function(a,b,c,d,e,f){"use strict";a=b("CometSearchResultsBase.entrypoint").getPreloadProps;c={getPreloadProps:a,root:b("JSResource")("SearchCometGlobalSearchTopTabRoot.react").__setRef("SearchCometGlobalSearchTopTabRoot.entrypoint")};e.exports=c}),null);
