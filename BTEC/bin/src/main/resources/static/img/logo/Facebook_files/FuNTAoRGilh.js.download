@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["f9akT"]); }
+
+__d("CometEntityScopedTypeaheadDialogTrigger.react",["ix","fbt","React","TetraButton.react","fbicon","useCometSearchResultsTypeaheadDialogTriggerClickHandler"],(function(a,b,c,d,e,f,g,h){"use strict";var i=b("React");function a(a){var c=a.buttonProps;c=c===void 0?{}:c;var d=a.dialogEntryPoint;a=a.entityID;d=b("useCometSearchResultsTypeaheadDialogTriggerClickHandler")(d,a);a=d[0];var e=d[1],f=d[2],j=d[3];d=d[4];return i.jsx(b("TetraButton.react"),babelHelpers["extends"]({icon:b("fbicon")._(g("491282"),16),label:h._("T\u00ecm ki\u1ebfm"),labelIsHidden:!0,onHoverIn:f,onHoverOut:j,onPress:a,onPressIn:d,ref:e,testid:void 0,type:"secondary"},c))}e.exports=a}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["cS5Ja"]); }
+
+__d("CometVideoHomeFeedRootQuery$Parameters",[],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{operationKind:"query",name:"CometVideoHomeFeedRootQuery",id:"2718314038281334",text:null,metadata:{relayPreloadable:!0}}};e.exports=a}),null);

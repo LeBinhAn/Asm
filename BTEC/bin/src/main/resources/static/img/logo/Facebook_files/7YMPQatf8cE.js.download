@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["h40L4"]); }
+
+__d("CometGroupRootQuery$Parameters",[],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{operationKind:"query",name:"CometGroupRootQuery",id:"3122313517779028",text:null,metadata:{relayPreloadable:!0}}};e.exports=a}),null);
+__d("buildGroupCometRoot.entrypoint",["JSResource","WebPixelRatio","createContentAreaCompoundEntryPointBuilder","CometGroupRootQuery$Parameters"],(function(a,b,c,d,e,f){"use strict";e.exports=b("createContentAreaCompoundEntryPointBuilder")(b("JSResource")("CometGroupRoot.react").__setRef("buildGroupCometRoot.entrypoint"),function(a){return{rootQueryReference:{environmentProviderOptions:{actorID:a.routeProps.actorID},parameters:b("CometGroupRootQuery$Parameters"),variables:{groupID:a.routeProps.groupID,scale:b("WebPixelRatio").get()}}}})}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["QfAeR"]); }
+
+__d("CometNumber.react",["React","formatNumber"],(function(a,b,c,d,e,f){"use strict";c=b("React");function a(a){var c=a.decimals;a=a.number;return b("formatNumber").withThousandDelimiters(a,c)}e.exports=c.memo(a)}),null);

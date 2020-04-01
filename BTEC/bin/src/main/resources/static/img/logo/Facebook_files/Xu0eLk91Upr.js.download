@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["mJJah"]); }
+
+__d("CometUFITooltipNamesList.react",["fbt","CometList_DEPRECATED.react","CometNumber.react","React","qex"],(function(a,b,c,d,e,f,g){"use strict";var h=b("React");function a(a){var c=a.names,d=a.totalCount;a=babelHelpers.objectWithoutPropertiesLoose(a,["names","totalCount"]);var e=[].concat(c);if(d>c.length){var f;f=((f=b("qex")._("1113951"))!=null?f:!1)&&((f=b("qex")._("1115760"))!=null?f:!1);e.push(f?g._("and more\u2026"):g._("v\u00e0 {reactionCount} ng\u01b0\u1eddi kh\u00e1c...",[g._param("reactionCount",h.jsx(b("CometNumber.react"),{decimals:0,number:d-c.length}))]))}return h.jsx(b("CometList_DEPRECATED.react"),babelHelpers["extends"]({},a,{children:e}))}e.exports=a}),null);
