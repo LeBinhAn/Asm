@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["T9MnH"]); }
+
+__d("UFI2CommentAttachmentContainer.react",["cx","React","joinClasses"],(function(a,b,c,d,e,f,g){"use strict";var h=b("React");function a(a){var c=a.children,d=a.className,e=a.height;a=a.width;return h.jsxs("div",{className:b("joinClasses")("_2tx5",d),children:[h.jsx("div",{className:"_2txe",children:c}),h.jsx("div",{className:"_3fp0",style:{paddingBottom:(a?e/a*100:0)+"%",width:a}}),h.jsx("div",{className:"_8un9"})]})}e.exports=a}),null);
+__d("UFI2CommentAttachmentContentFilterBootloadPlaceholder.react",["cx","React","UFI2CommentAttachmentContainer.react","joinClasses"],(function(a,b,c,d,e,f,g){"use strict";var h=b("React");function a(a){var c=a.className,d=a.height;a=a.width;return h.jsxs(h.Fragment,{children:[h.jsx(b("UFI2CommentAttachmentContainer.react"),{className:b("joinClasses")("_6bk0",c),height:d,width:a,children:h.jsx("div",{})}),h.jsx("div",{className:"_6bk2"})]})}e.exports=a}),null);

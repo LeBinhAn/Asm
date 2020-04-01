@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["INDfV"]); }
+
+__d("useCometClickToMessageActionLink",["requireDeferred","CometRelay","MWChatOpenTabForPage.re","emptyFunction"],(function(a,b,c,d,e,f){"use strict";var g=b("CometRelay").useRelayEnvironment,h=b("requireDeferred")("MWChatBusinessCTAAdsSenderMutation");function a(a,c){var d=b("MWChatOpenTabForPage.re").useHook("pages_cta"),e=g();return c==null?b("emptyFunction"):function(){d(c),a!=null&&h.onReady(function(b){return b.sendAds(e,{ad_id:a,page_id:c})})}}e.exports=a}),null);

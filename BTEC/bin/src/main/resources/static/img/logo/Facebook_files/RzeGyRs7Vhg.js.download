@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["iM62n"]); }
+
+__d("timelineStoryLiveInsertUpdater",["CometRelay"],(function(a,b,c,d,e,f){"use strict";var g=b("CometRelay").ConnectionHandler;a=function(a){var b=function(b){var c=b.getRootField("story_create");c=c&&c.getLinkedRecord("timeline_feed_units_edge");var d=b.get(a);if(!d)return;var e=g.getConnection(d,"ProfileCometTimelineFeed_user_timeline_list_feed_units");if(e){var f=g.buildConnectionEdge(b,e,c);f&&g.insertEdgeBefore(e,f)}e=g.getConnection(d,"ProfileCometTimelineGridViewFeed_timeline_grid_feed_units");if(e){f=g.buildConnectionEdge(b,e,c);f&&g.insertEdgeBefore(e,f)}};return b};e.exports=a}),null);

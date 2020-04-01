@@ -20,12 +20,12 @@ import java.util.Optional;
 public class CourseController {  
   @Autowired private UserService userService;  
 
-  @RequestMapping("/list-course")  
+  @RequestMapping("/show-all-course")  
   public String viewCourse(Model model) {  
     List<AppUser> users = userService.getAllUser();  
 
     model.addAttribute("users", users);  
 
-    return "list-course";  
+    return "show-all-course";  
   }  
 }
