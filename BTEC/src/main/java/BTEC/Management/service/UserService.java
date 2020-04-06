@@ -8,6 +8,8 @@ import java.util.Optional;
 public interface UserService {  
   List<AppUser> getAllUser();  
 
+  List<AppUser> getTrainerOnly(Long RoleId);  
+
   void saveUser(AppUser user);  
 
   void deleteUser(Long id);  

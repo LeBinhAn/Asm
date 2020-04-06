@@ -1,0 +1,31 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" class="no-js" lang="en">
+<head>
+</head>
+<body>
+    <div class="row">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Password</th>
+                    <th>DELETE</th>
+                    <th>EDIT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user : ${users}">
+                    <td th:text="${user.userId}"></td>
+                    <td th:text="${user.userName}"></td>
+                    <td th:text="${user.encrytedPassword}"></td>
+                    <td><a th:href="@{/edit?id={id}(id=${user.userId})}"><span
+                            class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a th:href="@{/delete?id={id}(id=${user.userName})}"><span
+                            class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

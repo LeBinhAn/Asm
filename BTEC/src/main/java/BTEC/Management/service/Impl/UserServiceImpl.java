@@ -1,9 +1,9 @@
 package BTEC.Management.service.Impl;
 
-import org.hibernate.type.descriptor.sql.BigIntTypeDescriptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import BTEC.Management.DataAccessObjects.AppUserDAO;
 import BTEC.Management.Entities.AppUser;
 import BTEC.Management.Repository.UserRepository;
 import BTEC.Management.service.UserService;
@@ -15,9 +15,15 @@ import java.util.Optional;
 public class UserServiceImpl implements UserService {  
   @Autowired private UserRepository userRepository;  
 
+  @Autowired private AppUserDAO appUserDAO;
   @Override  
   public List<AppUser> getAllUser() {  
     return (List<AppUser>) userRepository.findAll();  
+  }  
+
+  @Override  
+  public List<AppUser> getTrainerOnly(Long RoleId) {  
+    return (List<AppUser>) appUserDAO.findTrainerOnly(RoleId);  
   }  
 
   @Override  

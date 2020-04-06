@@ -25,5 +25,29 @@ public class LoginController {
         return "admin";
     }
 
+    
+    @RequestMapping(value = "/trainer", method = RequestMethod.GET)
+    public String trainerPage(Model model, Principal principal) {
+         
+        User loginedUser = (User) ((Authentication) principal).getPrincipal();
+ 
+        String userInfo = WebUtils.toString(loginedUser);
+        model.addAttribute("userInfo", userInfo);
+         
+        return "trainer";
+    }
+
+    
+    @RequestMapping(value = "/staff", method = RequestMethod.GET)
+    public String staffPage(Model model, Principal principal) {
+         
+        User loginedUser = (User) ((Authentication) principal).getPrincipal();
+ 
+        String userInfo = WebUtils.toString(loginedUser);
+        model.addAttribute("userInfo", userInfo);
+         
+        return "staff";
+    }
+
 
 }
