@@ -12,11 +12,11 @@ import BTEC.Management.utils.WebUtils;
 @Controller
 public class MainController {
  
-    @RequestMapping(value = { "/","/landing"}, method = RequestMethod.GET)
+    @RequestMapping(value = { "/","/index"}, method = RequestMethod.GET)
     public String welcomePage(Model model) {
     	model.addAttribute("title", "Welcome");
         model.addAttribute("message", "This is welcome page!");
-       return "landing";
+       return "index";
     }   
  
     @RequestMapping(value = "/login", method = RequestMethod.GET)

@@ -31,11 +31,11 @@ public class CourseController {
     return "add-new-course";  
   }  
   
-  @RequestMapping(value = "/edit-course", method = RequestMethod.GET)  
+  @RequestMapping(value = "/edit-course-information", method = RequestMethod.GET)  
   public String editCourse(@RequestParam("id") Long courseId, Model model) {  
     Optional<Course> userEdit = courseService.findCourseById(courseId);  
     userEdit.ifPresent(course -> model.addAttribute("course", course));  
-    return "edit-course";  
+    return "edit-course-information";  
   }  
 
   @RequestMapping(value = "/save-course", method = RequestMethod.POST)  

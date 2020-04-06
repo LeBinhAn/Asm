@@ -78,128 +78,27 @@
                         <li class="active">
                             <a class="has-arrow" th:href="@{/index}">
 								   <span class="educate-icon educate-home icon-wrap"></span>
-								   <span class="mini-click-non">Education</span>
+								   <span class="mini-click-non">Training Staff Page</span>
 								</a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" th:href="@{/show-user}"><span class="mini-sub-pro">show user v.1</span></a></li>
+                                <li><a title="Dashboard v.1" th:href="@{/show-user}"><span class="mini-sub-pro">My Profile </span></a></li>
                             </ul>
                         </li>
                         <li>
-                            <a title="Landing Page" th:href="@{/events}" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/all-professors}" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Professors</span></a>
+                            <a class="has-arrow" th:href="@{/#}" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Account Management</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Professors" th:href="@{/view-all-account}"><span class="mini-sub-pro">All Account</span></a></li>
-                                <li><a title="Add Professor" th:href="@{/add-new-account}"><span class="mini-sub-pro">Add Account</span></a></li>
+                                <li><a title="All Professors" th:href="@{/show-all-account}"><span class="mini-sub-pro">Show All Trainer</span></a></li>
+                                <li><a title="Add Professor" th:href="@{/add-new-account}"><span class="mini-sub-pro">Add New Trainer</span></a></li>
+                                <li><a title="Edit Students" th:href="@{/show-all-trainee}"><span class="mini-sub-pro">Show All Trainee</span></a></li>
+                                <li><a title="Students Profile" th:href="@{/show-all-trainee}"><span class="mini-sub-pro">Add New Trainee</span></a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="has-arrow" th:href="@{/all-students}" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>
+                            <a class="has-arrow" th:href="@{/#}" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Course Management</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" th:href="@{/all-students}"><span class="mini-sub-pro">All Students</span></a></li>
-                                <li><a title="Add Students" th:href="@{/add-student}"><span class="mini-sub-pro">Add Student</span></a></li>
-                                <li><a title="Edit Students" th:href="@{/edit-student}"><span class="mini-sub-pro">Edit Student</span></a></li>
-                                <li><a title="Students Profile" th:href="@{/student-profile}"><span class="mini-sub-pro">Student Profile</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/all-courses}" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Courses</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Courses" th:href="@{/all-courses}"><span class="mini-sub-pro">All Courses</span></a></li>
-                                <li><a title="Add Courses" th:href="@{/add-course}"><span class="mini-sub-pro">Add Course</span></a></li>
-                                <li><a title="Edit Courses" th:href="@{/edit-course}"><span class="mini-sub-pro">Edit Course</span></a></li>
-                                <li><a title="Courses Profile" th:href="@{/course-info}"><span class="mini-sub-pro">Courses Info</span></a></li>
-                                <li><a title="course Payment" th:href="@{/course-payment}"><span class="mini-sub-pro">Courses Payment</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/all-courses}" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Library</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Library" th:href="@{/library-assets}"><span class="mini-sub-pro">Library Assets</span></a></li>
-                                <li><a title="Add Library" th:href="@{/add-library-assets}"><span class="mini-sub-pro">Add Library Asset</span></a></li>
-                                <li><a title="Edit Library" th:href="@{/edit-library-assets}"><span class="mini-sub-pro">Edit Library Asset</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/all-courses}" aria-expanded="false"><span class="educate-icon educate-department icon-wrap"></span> <span class="mini-click-non">Departments</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Departments List" th:href="@{/departments}"><span class="mini-sub-pro">Departments List</span></a></li>
-                                <li><a title="Add Departments" th:href="@{/add-department}"><span class="mini-sub-pro">Add Departments</span></a></li>
-                                <li><a title="Edit Departments" th:href="@{/edit-department}"><span class="mini-sub-pro">Edit Departments</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/mailbox}" aria-expanded="false"><span class="educate-icon educate-message icon-wrap"></span> <span class="mini-click-non">Mailbox</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Inbox" th:href="@{/mailbox}"><span class="mini-sub-pro">Inbox</span></a></li>
-                                <li><a title="View Mail" th:href="@{/mailbox-view}"><span class="mini-sub-pro">View Mail</span></a></li>
-                                <li><a title="Compose Mail" th:href="@{/mailbox-compose}"><span class="mini-sub-pro">Compose Mail</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/mailbox}" aria-expanded="false"><span class="educate-icon educate-interface icon-wrap"></span> <span class="mini-click-non">Interface</span></a>
-                            <ul class="submenu-angle interface-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Google Map" th:href="@{/google-map}"><span class="mini-sub-pro">Google Map</span></a></li>
-                                <li><a title="Data Maps" th:href="@{/data-maps}"><span class="mini-sub-pro">Data Maps</span></a></li>
-                                <li><a title="Pdf Viewer" th:href="@{/pdf-viewer}"><span class="mini-sub-pro">Pdf Viewer</span></a></li>
-                                <li><a title="X-Editable" th:href="@{/x-editable}"><span class="mini-sub-pro">X-Editable</span></a></li>
-                                <li><a title="Code Editor" th:href="@{/code-editor}"><span class="mini-sub-pro">Code Editor</span></a></li>
-                                <li><a title="Tree View" th:href="@{/tree-view}"><span class="mini-sub-pro">Tree View</span></a></li>
-                                <li><a title="Preloader" th:href="@{/preloader}"><span class="mini-sub-pro">Preloader</span></a></li>
-                                <li><a title="Images Cropper" th:href="@{/images-cropper}"><span class="mini-sub-pro">Images Cropper</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/mailbox}" aria-expanded="false"><span class="educate-icon educate-charts icon-wrap"></span> <span class="mini-click-non">Charts</span></a>
-                            <ul class="submenu-angle chart-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Bar Charts" th:href="@{/bar-charts}"><span class="mini-sub-pro">Bar Charts</span></a></li>
-                                <li><a title="Line Charts" th:href="@{/line-charts}"><span class="mini-sub-pro">Line Charts</span></a></li>
-                                <li><a title="Area Charts" th:href="@{/area-charts}"><span class="mini-sub-pro">Area Charts</span></a></li>
-                                <li><a title="Rounded Charts" th:href="@{/rounded-chart}"><span class="mini-sub-pro">Rounded Charts</span></a></li>
-                                <li><a title="C3 Charts" th:href="@{/c3}"><span class="mini-sub-pro">C3 Charts</span></a></li>
-                                <li><a title="Sparkline Charts" th:href="@{/sparkline}"><span class="mini-sub-pro">Sparkline Charts</span></a></li>
-                                <li><a title="Peity Charts" th:href="@{/peity}"><span class="mini-sub-pro">Peity Charts</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/mailbox}" aria-expanded="false"><span class="educate-icon educate-data-table icon-wrap"></span> <span class="mini-click-non">Data Tables</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Peity Charts" th:href="@{/static-table}"><span class="mini-sub-pro">Static Table</span></a></li>
-                                <li><a title="Data Table" th:href="@{/data-table}"><span class="mini-sub-pro">Data Table</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/mailbox}" aria-expanded="false"><span class="educate-icon educate-form icon-wrap"></span> <span class="mini-click-non">Forms Elements</span></a>
-                            <ul class="submenu-angle form-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Basic Form Elements" th:href="@{/basic-form-element}"><span class="mini-sub-pro">Bc Form Elements</span></a></li>
-                                <li><a title="Advance Form Elements" th:href="@{/advance-form-element}"><span class="mini-sub-pro">Ad Form Elements</span></a></li>
-                                <li><a title="Password Meter" th:href="@{/password-meter}"><span class="mini-sub-pro">Password Meter</span></a></li>
-                                <li><a title="Multi Upload" th:href="@{/multi-upload}"><span class="mini-sub-pro">Multi Upload</span></a></li>
-                                <li><a title="Text Editor" th:href="@{/tinymc}"><span class="mini-sub-pro">Text Editor</span></a></li>
-                                <li><a title="Dual List Box" th:href="@{/dual-list-box}"><span class="mini-sub-pro">Dual List Box</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="has-arrow" th:href="@{/mailbox}" aria-expanded="false"><span class="educate-icon educate-apps icon-wrap"></span> <span class="mini-click-non">App views</span></a>
-                            <ul class="submenu-angle app-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Notifications" th:href="@{/notifications}"><span class="mini-sub-pro">Notifications</span></a></li>
-                                <li><a title="Alerts" th:href="@{/alerts}"><span class="mini-sub-pro">Alerts</span></a></li>
-                                <li><a title="Modals" th:href="@{/modals}"><span class="mini-sub-pro">Modals</span></a></li>
-                                <li><a title="Buttons" th:href="@{/buttons}"><span class="mini-sub-pro">Buttons</span></a></li>
-                                <li><a title="Tabs" th:href="@{/tabs}"><span class="mini-sub-pro">Tabs</span></a></li>
-                                <li><a title="Accordion" th:href="@{/accordion}"><span class="mini-sub-pro">Accordion</span></a></li>
-                            </ul>
-                        </li>
-                        <li id="removable">
-                            <a class="has-arrow" th:href="@{/#}" aria-expanded="false"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Pages</span></a>
-                            <ul class="submenu-angle page-mini-nb-dp" aria-expanded="false">
-                                <li><a title="Login" th:href="@{/login}"><span class="mini-sub-pro">Login</span></a></li>
-                                <li><a title="Register" th:href="@{/register}"><span class="mini-sub-pro">Register</span></a></li>
-                                <li><a title="Lock" th:href="@{/lock}"><span class="mini-sub-pro">Lock</span></a></li>
-                                <li><a title="Password Recovery" th:href="@{/password-recovery}"><span class="mini-sub-pro">Password Recovery</span></a></li>
-                                <li><a title="404 Page" th:href="@{/404}"><span class="mini-sub-pro">404 Page</span></a></li>
-                                <li><a title="500 Page" th:href="@{/500}"><span class="mini-sub-pro">500 Page</span></a></li>
+                                <li><a title="All Students" th:href="@{/show-all-course}"><span class="mini-sub-pro">Show All Course</span></a></li>
+                                <li><a title="Add Students" th:href="@{/add-new-course}"><span class="mini-sub-pro">Add New Course</span></a></li>
+                                <li><a title="Add Students" th:href="@{/add-new-topic}"><span class="mini-sub-pro">Add New Topic</span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -236,7 +135,7 @@
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
                                         <div class="header-top-menu tabl-d-n">
                                             <ul class="nav navbar-nav mai-top-nav">
-                                                <li class="nav-item"><a th:href="@{/#}" class="nav-link">Home</a>
+                                                <li class="nav-item"><a th:href="@{/staff}" class="nav-link">Home</a>
                                                 </li>
                                                 <li class="nav-item"><a th:href="@{/#}" class="nav-link">About</a>
                                                 </li>
@@ -382,8 +281,8 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a th:href="@{/#}" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-															<img th:src="@{/img/product/pro4.jpg}" alt="" />
-															<span class="admin-name">Prof.Anderson</span>
+                                                            <img th:src="@{/img/product/pro4.jpg}" alt="" />
+                                                            <span class="admin-name" th:utext="${#request.userPrincipal.name}"></span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
@@ -830,7 +729,6 @@
                                                                             </div>
                                                                         </li>
                                                                     </ul>
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -846,190 +744,6 @@
                 </div>
             </div>
             <!-- Mobile Menu start -->
-            <div class="mobile-menu-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="mobile-menu">
-                                <nav id="dropdown">
-                                    <ul class="mobile-menu-nav">
-                                        <li><a data-toggle="collapse" data-target="#Charts" th:href="@{/#}">Home <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/index}">Dashboard v.1</a></li>
-                                                <li><a th:href="@{/index-1}">Dashboard v.2</a></li>
-                                                <li><a th:href="@{/index-3}">Dashboard v.3</a></li>
-                                                <li><a th:href="@{/analytics}">Analytics</a></li>
-                                                <li><a th:href="@{/widgets}">Widgets</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a th:href="@{/events}">Event</a></li>
-                                        <li><a data-toggle="collapse" data-target="#demoevent" th:href="@{/#}">Professors <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demoevent" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/all-professors}">All Professors</a>
-                                                </li>
-                                                <li><a th:href="@{/add-professor}">Add Professor</a>
-                                                </li>
-                                                <li><a th:href="@{/edit-professor}">Edit Professor</a>
-                                                </li>
-                                                <li><a th:href="@{/professor-profile}">Professor Profile</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#demopro" th:href="@{/#}">Students <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demopro" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/all-students}">All Students</a>
-                                                </li>
-                                                <li><a th:href="@{/add-student}">Add Student</a>
-                                                </li>
-                                                <li><a th:href="@{/edit-student}">Edit Student</a>
-                                                </li>
-                                                <li><a th:href="@{/student-profile}">Student Profile</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#democrou" th:href="@{/#}">Courses <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="democrou" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/all-courses}">All Courses</a>
-                                                </li>
-                                                <li><a th:href="@{/add-course}">Add Course</a>
-                                                </li>
-                                                <li><a th:href="@{/edit-course}">Edit Course</a>
-                                                </li>
-                                                <li><a th:href="@{/course-profile}">Courses Info</a>
-                                                </li>
-                                                <li><a th:href="@{/course-payment}">Courses Payment</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#demolibra" th:href="@{/#}">Library <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demolibra" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/library-assets}">Library Assets</a>
-                                                </li>
-                                                <li><a th:href="@{/add-library-assets}">Add Library Asset</a>
-                                                </li>
-                                                <li><a th:href="@{/edit-library-assets}">Edit Library Asset</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#demodepart" th:href="@{/#}">Departments <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demodepart" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/departments}">Departments List</a>
-                                                </li>
-                                                <li><a th:href="@{/add-department}">Add Departments</a>
-                                                </li>
-                                                <li><a th:href="@{/edit-department}">Edit Departments</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#demo" th:href="@{/#}">Mailbox <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="demo" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/mailbox}">Inbox</a>
-                                                </li>
-                                                <li><a th:href="@{/mailbox-view}">View Mail</a>
-                                                </li>
-                                                <li><a th:href="@{/mailbox-compose}">Compose Mail</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Miscellaneousmob" th:href="@{/#}">Interface <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="Miscellaneousmob" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/google-map}">Google Map</a>
-                                                </li>
-                                                <li><a th:href="@{/data-maps}">Data Maps</a>
-                                                </li>
-                                                <li><a th:href="@{/pdf-viewer}">Pdf Viewer</a>
-                                                </li>
-                                                <li><a th:href="@{/x-editable}">X-Editable</a>
-                                                </li>
-                                                <li><a th:href="@{/code-editor}">Code Editor</a>
-                                                </li>
-                                                <li><a th:href="@{/tree-view}">Tree View</a>
-                                                </li>
-                                                <li><a th:href="@{/preloader}">Preloader</a>
-                                                </li>
-                                                <li><a th:href="@{/images-cropper}">Images Cropper</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Chartsmob" th:href="@{/#}">Charts <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="Chartsmob" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/bar-charts}">Bar Charts</a>
-                                                </li>
-                                                <li><a th:href="@{/line-charts}">Line Charts</a>
-                                                </li>
-                                                <li><a th:href="@{/area-charts}">Area Charts</a>
-                                                </li>
-                                                <li><a th:href="@{/rounded-chart}">Rounded Charts</a>
-                                                </li>
-                                                <li><a th:href="@{/c3}">C3 Charts</a>
-                                                </li>
-                                                <li><a th:href="@{/sparkline}">Sparkline Charts</a>
-                                                </li>
-                                                <li><a th:href="@{/peity}">Peity Charts</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Tablesmob" th:href="@{/#}">Tables <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="Tablesmob" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/static-table}">Static Table</a>
-                                                </li>
-                                                <li><a th:href="@{/data-table}">Data Table</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#formsmob" th:href="@{/#}">Forms <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="formsmob" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/basic-form-element}">Basic Form Elements</a>
-                                                </li>
-                                                <li><a th:href="@{/advance-form-element}">Advanced Form Elements</a>
-                                                </li>
-                                                <li><a th:href="@{/password-meter}">Password Meter</a>
-                                                </li>
-                                                <li><a th:href="@{/multi-upload}">Multi Upload</a>
-                                                </li>
-                                                <li><a th:href="@{/tinymc}">Text Editor</a>
-                                                </li>
-                                                <li><a th:href="@{/dual-list-box}">Dual List Box</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Appviewsmob" th:href="@{/#}">App views <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="Appviewsmob" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/basic-form-element}">Basic Form Elements</a>
-                                                </li>
-                                                <li><a th:href="@{/advance-form-element}">Advanced Form Elements</a>
-                                                </li>
-                                                <li><a th:href="@{/password-meter}">Password Meter</a>
-                                                </li>
-                                                <li><a th:href="@{/multi-upload}">Multi Upload</a>
-                                                </li>
-                                                <li><a th:href="@{/tinymc}">Text Editor</a>
-                                                </li>
-                                                <li><a th:href="@{/dual-list-box}">Dual List Box</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Pagemob" th:href="@{/#}">Pages <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
-                                            <ul id="Pagemob" class="collapse dropdown-header-top">
-                                                <li><a th:href="@{/login}">Login</a>
-                                                </li>
-                                                <li><a th:href="@{/register}">Register</a>
-                                                </li>
-                                                <li><a th:href="@{/lock}">Lock</a>
-                                                </li>
-                                                <li><a th:href="@{/password-recovery}">Password Recovery</a>
-                                                </li>
-                                                <li><a th:href="@{/404}">404 Page</a></li>
-                                                <li><a th:href="@{/500}">500 Page</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Mobile Menu end -->
             <div class="breadcome-area">
                 <div class="container-fluid">
@@ -1068,19 +782,18 @@
 			        <span th:text="${success}"></span>
 		    </div>
 		<div class="row">
-			<a th:href="@{/add-new-account}" class="btn btn-success pull-left">
-				<span class="glyphicon glyphicon-plus"></span> Add new employee
+			<a th:href="@{/add-new-course}" class="btn btn-success pull-left">
+				<span class="glyphicon glyphicon-plus"></span> Add new course
 			</a>
 			<form class="form-inline pull-right" action="#"
 				th:action="@{/#}" method="GET">
 				<div class="form-group">
 					<input type="text" class="form-control" name="s"
-						placeholder="Type employee name..." />
+						placeholder="Type Course Name" />
 				</div>
 				<button type="submit" class="btn btn-primary">Search</button>
 			</form>
 		</div>
-		
 			<div class="row">
 				<table class="table table-bordered table-hover">
 					<thead>
@@ -1088,8 +801,8 @@
 							<th>Course ID</th>
 							<th>Course Name</th>
                             <th>Course Description</th>
-                            <th>DELETE</th>
                             <th>EDIT</th>
+                            <th>DELETE</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -1097,7 +810,7 @@
 							<td th:text="${course.courseId}"></td>
 							<td th:text="${course.courseName}"></td>
 							<td th:text="${course.courseDescription}"></td>
-							<td><a th:href="@{/edit-course?id={id}(id=${course.courseId})}"><span
+							<td><a th:href="@{/edit-course-information?id={id}(id=${course.courseId})}"><span
 									class="glyphicon glyphicon-pencil"></span></a></td>
 							<td><a th:href="@{/delete-course?id={id}(id=${course.courseId})}"><span
 									class="glyphicon glyphicon-trash"></span></a></td>
@@ -1105,8 +818,18 @@
 					</tbody>
 				</table>
 			</div>
-		
-	</div>
+            <div class="footer-copyright-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="footer-copy-right">
+                                <p>Copyright © 2018. All rights reserved. Template by <a th:href="@{https://colorlib.com/wp/templates/}">Colorlib</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	    </div>
         </div>
    </div>
 

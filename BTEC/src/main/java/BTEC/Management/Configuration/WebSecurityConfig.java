@@ -51,13 +51,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         
         http.authorizeRequests().antMatchers("/", "/login", "/logout").permitAll();
  
-        http.authorizeRequests().antMatchers("/view-all-course", "/edit-course", "/add-new-course").access("hasAnyRole('ROLE_TRAINER', 'ROLE_STAFF')");
+        http.authorizeRequests().antMatchers("/view-all-course").access("hasAnyRole('ROLE_TRAINER', 'ROLE_STAFF')");
  
         http.authorizeRequests().antMatchers("/add-new-account", "/show-all-account", "/edit-account").access("hasRole('ROLE_ADMIN')");
          
         http.authorizeRequests().antMatchers("/trainer").access("hasRole('ROLE_TRAINER')");
 
-        http.authorizeRequests().antMatchers("/staff").access("hasRole('ROLE_STAFF')");
+        http.authorizeRequests().antMatchers("/staff", "/edit-course", "/add-new-course").access("hasRole('ROLE_STAFF')");
 
         http.authorizeRequests().and().exceptionHandling().accessDeniedPage("/404");
  
@@ -70,7 +70,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //.failureHandler(authenticationFailureHandler())//
                 .usernameParameter("username")//
                 .passwordParameter("password")
-                .and().logout().logoutSuccessUrl("/landing");
+                .and().logout().logoutSuccessUrl("/index");
                 // .deleteCookies("auth_code", "JSESSIONID").invalidateHttpSession(true)
                 // .logoutSuccessHandler(logoutSuccessHandler());
  
