@@ -1085,21 +1085,21 @@
 				<table class="table table-bordered table-hover">
 					<thead>
 						<tr>
-							<th>No</th>
-							<th>Name</th>
-							<th>Phone</th>
-							<th>Edit</th>
-							<th>Delete</th>
+							<th>Course ID</th>
+							<th>Course Name</th>
+                            <th>Course Description</th>
+                            <th>DELETE</th>
+                            <th>EDIT</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr th:each="user : ${users}">
-							<td th:text="${user.userName}"></td>
-							<td th:text="${user.encrytedPassword}"></td>
-							<td th:text="${user.userId}"></td>
-							<td><a th:href="@{/edit?id={id}(id=${user.userId})}"><span
+						<tr th:each="course : ${courses}">
+							<td th:text="${course.courseId}"></td>
+							<td th:text="${course.courseName}"></td>
+							<td th:text="${course.courseDescription}"></td>
+							<td><a th:href="@{/edit-course?id={id}(id=${course.courseId})}"><span
 									class="glyphicon glyphicon-pencil"></span></a></td>
-							<td><a th:href="@{/delete?id={id}(id=${user.userId})}"><span
+							<td><a th:href="@{/delete-course?id={id}(id=${course.courseId})}"><span
 									class="glyphicon glyphicon-trash"></span></a></td>
 						</tr>
 					</tbody>

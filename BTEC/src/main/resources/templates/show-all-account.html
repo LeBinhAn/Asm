@@ -1080,7 +1080,7 @@
                                             <a href="#"><i class="fa fa-pinterest"></i></a>
                                         </div>
                                     <img alt="logo" class="img-circle m-b" src="img/contact/1.jpg">
-                                    <h3><span th:text=*{user.getUserName()}></h3>
+                                    <a th:href="@{trainer-profile?id={id}(id=${user.userId})}" class="btn btn-primary"></a><h3><span th:text=*{user.getUserName()}></h3></a>
                                     <p class="all-pro-ad">London, LA</p>
                                     <p>
                                     Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.

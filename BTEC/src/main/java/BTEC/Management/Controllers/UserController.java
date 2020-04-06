@@ -20,14 +20,20 @@ import java.util.Optional;
 public class UserController {  
   @Autowired private UserService userService;  
 
-  @RequestMapping("/view-all-account")  
+  @RequestMapping("/show-all-account")  
   public String index(Model model) {  
     List<AppUser> users = userService.getAllUser();  
 
     model.addAttribute("users", users);  
 
-    return "view-all-account";  
+    return "show-all-account";  
   }  
+  @RequestMapping("/show-trainer-only")
+  public String showTrainer(Model model){
+    List<AppUser> users = userService.getTrainerOnly((long) 3);
+    model.addAttribute("users", users);
+    return "show-trainer-only";
+  }
 
   @RequestMapping(value = "/add-new-account", method = RequestMethod.GET)  
   public String addUser(Model model, Principal principal) {  
@@ -45,12 +51,12 @@ public class UserController {
   @RequestMapping(value = "/save", method = RequestMethod.POST)  
   public String save(AppUser user) {  
     userService.saveUser(user);  
-    return "redirect:/";  
+    return "redirect:/show-all-account";  
   }  
 
   @RequestMapping(value = "/delete", method = RequestMethod.GET)  
   public String deleteUser(@RequestParam("id") Long userId, Model model) {  
     userService.deleteUser(userId);  
-    return "redirect:/";  
+    return "redirect:/show-all-account";  
   }  
 }
