@@ -1,1 +1,1 @@
-1st time commit
+Basic CRUD website using Java Servlet and Apache Tomcat
